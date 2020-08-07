@@ -1,20 +1,20 @@
 import React from 'react';
 import './App.css';
 import {Route, Switch, NavLink} from 'react-router-dom';
-import picture from './picture.jpg';
+import picture from './취업사진.jpg';
 import git from './github.jpg';
 import insta from './insta.jpg';
 import Html from './html.png';
 import Css from './css.png';
 import Js from './js.jpg';
 import reacts from './react.png';
+import bgm from './bgm.PNG';
+import escape from './escape.png';
 
 
 function Home(){
   return(
     <div className="home">
-      <div className="space">
-      </div>
       <div className="picture">
         <img src={picture} alt="사진" className="pictureMe" />
       </div>
@@ -75,6 +75,32 @@ function About() {
   )
 }
 
+function Project() {
+  return(
+    <div className="project">
+      <div className="projectText">
+        <h2>상원이의 흔적들</h2>
+      </div>
+      <div className="projectImg">
+       <div className="firstProject">
+         <img src={bgm} alt="브금 사이트" className="bgm" />
+         <div className="bgmExplain">
+           <h3>BGM ON</h3>
+           <div className="bgmText">
+           듣고 싶은 노래를 바로 듣자!
+           게임 도중 또는 
+
+           </div>
+         </div>
+       </div>
+        <div className="secondProject">
+          <img src={escape} alt="방탈출" className="escape" />
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function Footer() {
   return(
     <div className="footer">
@@ -105,7 +131,7 @@ function App() {
       <Switch>
         <Route exact path="/"><Home /></Route>
         <Route path="/About"><About /></Route>
-        <Route path="/Project">프로젝트</Route>
+        <Route path="/Project"><Project /></Route>
         <Route path="/Contact">연락처</Route>
         <Route path="/">잘못 들어오셨습니다.</Route>
       </Switch>

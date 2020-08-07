@@ -37,8 +37,18 @@ li{
 .home{
   width: 100%;
   background-color: yellow;
-  transition: 1s;
+  animation-duration: 2s;
+  animation-name: port;
 }
+@keyframes port {
+  from{
+    margin-left: 50%;
+  }
+  to{
+    margin-left: 0%;
+  }
+}
+
 .picture{
   text-align: center;
 }
@@ -66,6 +76,8 @@ li{
 }
 .about{
   background-color: yellow; 
+  animation-duration: 2s;
+  animation-name: port;
 }
 .aboutText{
   text-align: center;
@@ -94,6 +106,22 @@ li{
   margin: 30%;
   font-weight: bold;
 }
+.project{
+  background-color: yellow;
+}
+.projectText{
+  text-align: center;
+  padding: 20px;
+}
+.firstProject, .secondProject{
+  display: flex;
+  margin: 20px;
+}
+.bgm, .escape{
+  width: 500px;
+  height: 300px;
+}
+
 .footer{
   background-color: black;
   color: white;
