@@ -67,6 +67,7 @@ li{
 .gitIcons, .instaIcons{
   border-radius: 100px;
   margin: 30px;
+  height: 180px;
 }
 .gitText, .instaText{
   margin-left: 37%;
@@ -75,9 +76,7 @@ li{
   text-align: center;
 }
 .about{
-  background-color: yellow; 
-  animation-duration: 2s;
-  animation-name: port;
+  background-color: yellow;
 }
 .aboutText{
   text-align: center;
@@ -87,7 +86,9 @@ li{
   margin-top: 10px;
 }
 .aboutSkill{
-  margin-left: 200px;
+  margin-left: 200px; 
+  animation-duration: 2s;
+  animation-name: port;
 }
 .aboutSkillText{
   text-align: center;
@@ -101,6 +102,7 @@ li{
   width: 150px;
   height: 200px;
   border-radius: 30px;
+  cursor: pointer;
 }
 .skillText{
   margin: 30%;
@@ -115,13 +117,85 @@ li{
 }
 .firstProject, .secondProject{
   display: flex;
-  margin: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 30px;
+  width: 800px;
+  text-align: center;
+  border: 3px solid black;
+  box-shadow: 10px 10px 5px 5px;
+  animation-duration: 2s;
+  animation-name: port;
 }
 .bgm, .escape{
   width: 500px;
   height: 300px;
 }
-
+.proText{
+  background: linear-gradient(#BEF781,#F5F6CE);
+}
+.proInfo, .proDev{
+  margin: 40px;
+  text-align: center;
+}
+.contact{
+  background-color: yellow;
+}
+.contactH1{
+  text-align: center;
+  padding: 30px;
+}
+.card{
+  width: 500px;
+  height: 300px;
+  box-shadow: 10px 10px 10px 10px;
+  background: linear-gradient(#F5F6CE,#CEF6F5);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 40%);
+  opacity: 1;
+  animation-duration: 1s;
+  animation-name: direct;
+}
+@keyframes direct{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 0.5;
+  }
+}
+.cardLeft{
+  float: left;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+.cardRight{
+  float: right;
+}
+hr{
+  margin-top: 50px;
+}
+.cardImg{
+  position: relative;
+  top: 50px;
+  right: 20px;
+  width: 150px;
+  height: 200px;
+  border-radius: 25px;
+}
+.contactLink{
+  color: black;
+}
+.contactLink:visited{
+  color: black;
+}
+.full{
+  height: 225px;
+}
 .footer{
   background-color: black;
   color: white;
