@@ -1,0 +1,65 @@
+
+.proText{
+    background: linear-gradient(#BEF781,#F5F6CE);
+  }
+  .proInfo, .proDev{
+    margin: 40px;
+    text-align: center;
+  }
+  .contact{
+    background-color: yellow;
+  }
+  .contactH1{
+    text-align: center;
+    padding: 30px;
+  }
+  .card{
+    width: 500px;
+    height: 300px;
+    box-shadow: 10px 10px 10px 10px;
+    background: linear-gradient(#F5F6CE,#CEF6F5);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    opacity: 1;
+    animation-duration: 1s;
+    animation-name: direct;
+  }
+  @keyframes direct{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+  .cardLeft{
+    float: left;
+    position: relative;
+    top: 50px;
+    left: 50px;
+  }
+  .cardRight{
+    float: right;
+  }
+  hr{
+    margin-top: 50px;
+  }
+  .cardImg{
+    position: relative;
+    top: 50px;
+    right: 20px;
+    width: 150px;
+    height: 200px;
+    border-radius: 25px;
+  }
+  .contactLink{
+    color: black;
+  }
+  .contactLink:visited{
+    color: black;
+  }
+  .full{
+    height: 225px;
+}

@@ -1,0 +1,43 @@
+*{
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ text-decoration: none;
+}
+.home{
+    width: 100%;
+    background-color: yellow;
+    animation-duration: 2s;
+    animation-name: port;
+}
+@keyframes port {
+    from{
+      margin-left: 50%;
+    }
+    to{
+      margin-left: 0%;
+    }
+}  
+.picture{
+    text-align: center;
+}
+.pictureMe{
+    width: 200px;
+    height: auto;
+    border-radius: 100px;
+}
+.icon{
+    display: inline-block;
+    margin-left: 15%;
+}
+.gitIcon, .instaIcon{
+    display: block;
+}
+.gitIcons, .instaIcons{
+    border-radius: 100px;
+    margin: 30px;
+    height: 180px;
+}
+.gitText, .instaText{
+    margin-left: 37%;
+}

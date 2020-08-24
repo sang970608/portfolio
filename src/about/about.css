@@ -1,0 +1,48 @@
+*{
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ text-decoration: none;
+}
+.about{
+ background-color: yellow;
+}
+.aboutText{
+ text-align: center;
+}
+.aboutPre{
+ text-align: center;
+ margin-top: 10px;
+}
+.aboutSkill{
+    opacity: 1;
+    animation-duration: 1s;
+    animation-name: show;
+    animation-timing-function: linear;
+}
+@keyframes show{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.aboutSkillText{
+ text-align: center;
+ margin-top: 100px;
+}
+.skill{
+ display: inline-block;
+ margin: 6% 0% 6% 12.5%;
+}
+.skillImg{
+ width: 150px;
+ height: 200px;
+ border-radius: 30px;
+ cursor: pointer;
+}
+.skillText{
+ margin: 30%;
+ font-weight: bold;
+}
