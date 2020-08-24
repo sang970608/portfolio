@@ -5,12 +5,14 @@
     text-decoration: none;
 }
 .project{
-    background-color: yellow;
-  }
+    background: linear-gradient(yellow,#81F7F3);
+}
   .projectText{
     text-align: center;
     padding: 20px;
   }
+
+  @media screen and (min-width:950px){
   .firstProject, .secondProject{
     display: flex;
     position: relative;
@@ -38,3 +40,36 @@
     width: 500px;
     height: 300px;
   }
+}
+@media screen and (max-width:949px){
+  .firstProject, .secondProject{
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 50px;
+    width: 500px;
+    text-align: center;
+    border: 3px solid black;
+    box-shadow: 10px 10px 10px 10px;
+    animation-duration: 2s;
+    animation-name: shadow;
+  }
+  .bgmtool{
+    display: inline-block;
+  }
+  @keyframes shadow{
+      from {
+        box-shadow: 5px 5px 5px 5px;
+        margin: 30px;
+      }
+      to {
+        box-shadow: 10px 10px 10px 10px;
+        margin: 50px;
+     }
+  }
+  .bgm, .escape{
+    width: 500px;
+    height: 300px;
+  }
+}

@@ -22,23 +22,26 @@ function About() {
         </div>
         <h2 className="aboutSkillText">My Skills</h2>
         <div className="aboutSkill">
-          <div className="skill">
-            <img src={Html} alt="HTML" className="skillImg" title="expert"/>
-            <p className="skillText">HTML</p>
+          <div className="skillFirst">
+            <div className="skill">
+              <img src={Html} alt="HTML" className="skillImg" title="expert"/>
+              <p className="skillText">HTML</p>
+            </div>
+            <div className="skill">
+              <img src={Css} alt="CSS" className="skillImg" title="expert" />
+              <p className="skillText">CSS</p>
+            </div>
           </div>
-          <div className="skill">
-            <img src={Css} alt="CSS" className="skillImg" title="expert" />
-            <p className="skillText">CSS</p>
+          <div className="skillSecond">
+            <div className="skill">
+              <img src={Js} alt="JavaScript" className="skillImg" title="intermediate" />
+              <p className="skillText">JavaScript</p>
+            </div>
+            <div className="skill">
+              <img src={reacts} alt="React" className="skillImg" title="intermediate" />
+              <p className="skillText">React</p>
+            </div>
           </div>
-          <div className="skill">
-            <img src={Js} alt="JavaScript" className="skillImg" title="intermediate" />
-            <p className="skillText">JavaScript</p>
-          </div>
-          <div className="skill">
-            <img src={reacts} alt="React" className="skillImg" title="intermediate" />
-            <p className="skillText">React</p>
-          </div>
-          
         </div>
       </div>
     )

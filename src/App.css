@@ -11,11 +11,86 @@
 .left{
   float: left;
 }
+input[id="menuicon"]{
+  display: none;
+}
+a{
+  color : black;
+  font-weight: bold;
+}
+a:visited{
+ color : black;
+}
+@media screen and (max-width:767px){
+  input[id="menuicon"] + label{
+    display: block;
+    margin: 10px;
+    width: 50px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+  }
+  input[id="menuicon"] + label span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background : black;
+    border-radius: 30px;
+    transition : all .35s;
+  }
+  input[id="menuicon"] + label span:nth-child(1) {
+    top:0;
+  }
+  input[id="menuicon"] + label span:nth-child(2) {
+    top:50%;
+    transform: translateY(-50%);
+  }
+  input[id="menuicon"] + label span:nth-child(3) {
+    bottom:0;
+  }
+  input[id="menuicon"]:checked + label {
+    z-index: 2;
+  }
+  input[id="menuicon"]:checked + label span{
+    background : red;
+  }
+  input[id="menuicon"]:checked + label span:nth-child(1){
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  input[id="menuicon"]:checked + label span:nth-child(2){
+    opacity: 0;
+  }
+  input[id="menuicon"]:checked + label span:nth-child(3){
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+  }
+  .menu {
+    position: fixed;
+    top: 0px;
+    left: -200px;
+    background : linear-gradient(yellow,#81F7F3);
+    z-index: 1;
+    transition:all .35s;
+  }
+  input[id="menuicon"]:checked + label + ul{
+    left:60px;
+    display: flex;
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width:768px){
+.hamberger{
+  display: none;
+}
 ul{
   position: fixed;
   top: 40%;
   float: left;
-  background-color: black;
+  background-color: yellow;
+  opacity: 0.7;
 }
 li{
   width: 200px;
@@ -36,4 +111,5 @@ li{
 }
 .intro{
   text-align: center;
+}
 }

@@ -6,7 +6,7 @@
 }
 .home{
     width: 100%;
-    background-color: yellow;
+    background: linear-gradient(yellow,#81F7F3);
     animation-duration: 2s;
     animation-name: port;
 }
@@ -21,10 +21,47 @@
 .picture{
     text-align: center;
 }
+
+@media screen and (min-width : 1024px) {
+    .intro{
+        margin: 3% 0 3% 0;
+    }
+    .pictureMe{
+        width: 300px;
+        height: auto;
+    }
+    .iconGroup{
+        position: relative;
+        left: 60%;
+        transform: translateX(-50%);
+    }
+    .icon{
+        display: inline-block;
+        margin: 3% 0 3% 15%;
+    }
+    .gitIcon, .instaIcon{
+        display: block;
+    }
+    .gitIcons, .instaIcons{
+        border-radius: 100px;
+        margin: 30px;
+        height: 180px;
+    }
+    .gitText, .instaText{
+        margin: 10% 0 10% 37%;
+    }
+}
+
+@media screen and (min-width : 768px) {
 .pictureMe{
     width: 200px;
     height: auto;
     border-radius: 100px;
+}
+.iconGroup{
+    position: relative;
+    left: 60%;
+    transform: translateX(-50%);
 }
 .icon{
     display: inline-block;
@@ -40,4 +77,33 @@
 }
 .gitText, .instaText{
     margin-left: 37%;
+    color : black
+}
+.a:visited{
+    color:black;
+}
+}
+
+@media screen and (max-width : 767px) {
+.pictureMe{
+    width: 200px;
+    height: auto;
+    border-radius: 100px;
+}
+.intro {
+    text-align: center;
+}
+.gitIcons, .instaIcons{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100px;
+    margin: 30px;
+    height: 180px;
+}
+.gitText, .instaText{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
 }

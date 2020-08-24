@@ -11,7 +11,13 @@ function App() {
   return (
     <div className="App">
       <div className="left">
-        <ul>
+        <input type="checkbox" id="menuicon" />
+        <label for="menuicon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul className="menu">
           <li><h3><NavLink className="list" exact to="/">Home</NavLink></h3></li>
           <li><h3><NavLink className="list" to="/About">About</NavLink></h3></li>
           <li><h3><NavLink className="list" to="/Project">Project</NavLink></h3></li>

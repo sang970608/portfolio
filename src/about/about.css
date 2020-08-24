@@ -5,7 +5,7 @@
  text-decoration: none;
 }
 .about{
- background-color: yellow;
+ background: linear-gradient(yellow,#81F7F3);
 }
 .aboutText{
  text-align: center;
@@ -28,13 +28,42 @@
         opacity: 1;
     }
 }
+@media screen and (min-width:1024px){
+    .aboutSkillText{
+     text-align: center;
+     margin-top: 100px;
+    }
+    .skill{
+     display: inline-block;
+     margin: 6% 0% 6% 12.5%;
+    }
+    .skillImg{
+     width: 150px;
+     height: 200px;
+     border-radius: 50px;
+     cursor: pointer;
+    }
+    .skillText{
+     font-weight: bold;
+     padding-bottom: 60%;
+    }
+    }
+@media screen and (min-width:768px){
 .aboutSkillText{
- text-align: center;
  margin-top: 100px;
+}
+.skillFirst{
+ position: relative;
+ left: 50%;
+ transform: translateX(-30%);   
+}
+.skillSecond{
+ position: relative;
+ left: 50%;
+ transform: translate(-30%,-30%);   
 }
 .skill{
  display: inline-block;
- margin: 6% 0% 6% 12.5%;
 }
 .skillImg{
  width: 150px;
@@ -43,6 +72,27 @@
  cursor: pointer;
 }
 .skillText{
- margin: 30%;
+ margin: 10% 30% 0 30%;
  font-weight: bold;
 }
+}
+@media screen and (max-width:767px){
+    .aboutSkillText{
+     text-align: center;
+     margin-top: 100px;
+    }
+    .skillImg{
+     position: relative;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 200px;
+     height: 300px;
+     border-radius: 50px;
+     margin: 20px 0 20px 0;
+     cursor: pointer;
+    }
+    .skillText{
+     text-align: center;
+     font-weight: bold;
+    }
+    }

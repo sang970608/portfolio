@@ -11,10 +11,10 @@ function Project() {
         </div>
         <div className="projectImg">
          <div className="firstProject">
-           <a href="https://github.com/sang970608/bgm" target="_blank" >
+           <a href="https://github.com/sang970608/bgm" className="bgmtool" target="_blank" >
            <img src={bgm} alt="브금 사이트" className="bgm" /></a>
            <div className="proText">
-            <div className="proInfo">
+             <div className="proInfo">
               <h3>BGM ON (2020.06.20 ~ 2020.07.04)</h3>
               게임 도중에 듣고 싶은 노래를
               바로 듣자!
@@ -49,6 +49,8 @@ function Project() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="full">
         </div>
       </div>
   )
