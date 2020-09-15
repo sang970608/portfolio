@@ -58,6 +58,9 @@
     height: auto;
     border-radius: 100px;
 }
+.intro {
+    text-align: center;
+}
 .iconGroup{
     position: relative;
     left: 60%;
@@ -89,6 +92,9 @@
     width: 200px;
     height: auto;
     border-radius: 100px;
+}
+.picture{
+    text-align: center;
 }
 .intro {
     text-align: center;

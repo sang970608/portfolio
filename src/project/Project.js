@@ -2,6 +2,7 @@ import React from 'react';
 import './project.css';
 import bgm from './bgm.PNG';
 import escape from './escape.png';
+import movie from './movie.JPG';
 
 function Project() {
     return(
@@ -11,11 +12,11 @@ function Project() {
         </div>
         <div className="projectImg">
          <div className="firstProject">
-           <a href="https://github.com/sang970608/bgm" className="bgmtool" target="_blank" >
-           <img src={bgm} alt="브금 사이트" className="bgm" /></a>
+           <a href="https://nore.shop" className="bgmtool" target="_blank" >
+           <img src={bgm} alt="브금 사이트" className="bgm" title="bgm site" /></a>
            <div className="proText">
              <div className="proInfo">
-              <h3>BGM ON (2020.06.20 ~ 2020.07.04)</h3>
+              <h3>BGM ON (2020.06.08 ~ 2020.06.20)</h3>
               게임 도중에 듣고 싶은 노래를
               바로 듣자!
              </div>
@@ -30,9 +31,26 @@ function Project() {
              </div>
            </div>
          </div>
-          <div className="secondProject">
+         <div className="secondProject">
+            <a href="https://sang970608.github.io/movie_app" target="_blank">
+            <img src={movie} alt="영화 목록" className="movie" title="영화 목록" /></a>
+            <div className="proText">
+              <div className="proInfo">
+                <h3>영화 리스트 (2020.06.20 ~ 2020.07.08)</h3>
+                영화 API를 가져와서 보고싶은걸 찾자 !
+              </div>
+              <div className="proDev">
+                <strong>나의 역할</strong>
+                <br />
+                퍼블리싱
+                <br />
+                API사용
+              </div>
+            </div>
+          </div>
+          <div className="thirdProject">
             <a href="https://github.com/sang970608/escape" target="_blank">
-            <img src={escape} alt="방탈출" className="escape" /></a>
+            <img src={escape} alt="방탈출" className="escape" title="escape site" /></a>
             <div className="proText">
               <div className="proInfo">
                 <h3>학교 탈출 ! (2020.08.08 ~ 진행 중)</h3>
@@ -49,8 +67,7 @@ function Project() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="full">
+          <div className="fullPro" />
         </div>
       </div>
   )

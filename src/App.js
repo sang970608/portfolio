@@ -6,8 +6,21 @@ import About from './about/About.js';
 import Project from './project/Project.js';
 import Contact from './contact/Contact.js';
 import Footer from './Footer.js';
+import cat from './cat.gif';
 
-function App() {
+function Loading () {
+  return(
+    <div className="Loading">
+      <img src={cat} alt="Now Loading" title="Loading" className="LoadingImg" />
+      <div className="LoadingText">
+        <p>박상원의 포트폴리오</p>
+        <p>Now Loading</p>
+      </div>
+    </div>
+  )
+} 
+
+function Body () {
   return (
     <div className="App">
       <div className="left">
@@ -34,6 +47,25 @@ function App() {
       <Footer />
     </div>
   );
+}
+
+class App extends React.Component {
+  state = {
+    isLoading: true
+  };
+  componentDidMount() {
+    setTimeout(()=> {
+      this.setState({isLoading: false});
+    }, 3000);
+  }
+  render(){
+    const {isLoading} = this.state;
+    return (
+      <div className="App">
+        {isLoading ? <Loading /> : <Body />}
+      </div>
+    );
+  }
 }
 
 export default App;
