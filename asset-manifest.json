@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.06f399b6.chunk.css",
+    "main.js": "/portfolio/static/js/main.ce2eb4e6.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.ce2eb4e6.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.18c1d51b.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.18c1d51b.js.map",
+    "static/js/2.44c55612.chunk.js": "/portfolio/static/js/2.44c55612.chunk.js",
+    "static/js/2.44c55612.chunk.js.map": "/portfolio/static/js/2.44c55612.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.a3484dfe72f5fbfb75a7da2b7faf853b.js": "/portfolio/precache-manifest.a3484dfe72f5fbfb75a7da2b7faf853b.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.06f399b6.chunk.css.map": "/portfolio/static/css/main.06f399b6.chunk.css.map",
+    "static/js/2.44c55612.chunk.js.LICENSE.txt": "/portfolio/static/js/2.44c55612.chunk.js.LICENSE.txt",
+    "static/media/bgm.PNG": "/portfolio/static/media/bgm.98764087.PNG",
+    "static/media/bucheon.jpg": "/portfolio/static/media/bucheon.22f66603.jpg",
+    "static/media/cat.gif": "/portfolio/static/media/cat.98c90d82.gif",
+    "static/media/employ.jpg": "/portfolio/static/media/employ.1496287a.jpg",
+    "static/media/escape.png": "/portfolio/static/media/escape.3cc80f30.png",
+    "static/media/movie.JPG": "/portfolio/static/media/movie.00a2009f.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.18c1d51b.js",
+    "static/js/2.44c55612.chunk.js",
+    "static/css/main.06f399b6.chunk.css",
+    "static/js/main.ce2eb4e6.chunk.js"
+  ]
+}
